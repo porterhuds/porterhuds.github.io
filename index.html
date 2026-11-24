@@ -1,0 +1,1308 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黑椒盖饭流泪番茄 - 美食视频品牌官网 | 一勺热泪的原创厨房影像</title>
+<meta name="description" content="黑椒盖饭流泪番茄官方网站，专注一人食盖饭与番茄料理的原创高清美食视频社区，汇聚专业创作者，记录每一勺热气腾腾的真实滋味。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='34' r='24' fill='%23c0392b'/%3E%3Cpath d='M32 12c2-6 8-8 12-6-2 6-7 8-12 6z' fill='%232e7d32'/%3E%3Ccircle cx='24' cy='30' r='3' fill='%23fff'/%3E%3Ccircle cx='40' cy='30' r='3' fill='%23fff'/%3E%3Cpath d='M26 42c3 3 9 3 12 0' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --hpf-amber:#e08a2c;
+  --hpf-amber-deep:#b96b12;
+  --hpf-cream:#fbf5ea;
+  --hpf-cream-2:#f6ebd8;
+  --hpf-ink:#2b211a;
+  --hpf-ink-soft:#5c4a3a;
+  --hpf-tomato:#c0392b;
+  --hpf-tomato-soft:#e4655a;
+  --hpf-line:#e6d7be;
+  --hpf-white:#fffdf8;
+  --hpf-shadow:0 10px 30px rgba(120,80,20,.12);
+  --hpf-radius:18px;
+  --hpf-sticky:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--hpf-cream);
+  color:var(--hpf-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.hpf-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.hpf-sticky-zone{position:sticky;top:0;z-index:120}
+
+/* 公告条 */
+.hpf-announce{
+  background:linear-gradient(90deg,var(--hpf-ink) 0%,#4a3527 100%);
+  color:#f8ecd8;
+  font-size:13.5px;
+  letter-spacing:.2px;
+}
+.hpf-announce .hpf-wrap{display:flex;align-items:center;gap:12px;min-height:40px;flex-wrap:wrap}
+.hpf-announce-tag{
+  background:var(--hpf-tomato);
+  color:#fff;font-size:11px;padding:2px 9px;border-radius:20px;
+  letter-spacing:1px;white-space:nowrap;font-weight:700;
+}
+.hpf-announce-text{flex:1;min-width:200px}
+.hpf-announce-link{color:#ffd9a3;border-bottom:1px dashed rgba(255,217,163,.5);font-size:12.5px;white-space:nowrap}
+
+/* 页头 */
+.hpf-header{
+  background:rgba(251,245,234,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--hpf-line);
+}
+.hpf-header .hpf-wrap{display:flex;align-items:center;gap:22px;min-height:76px}
+.hpf-brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.hpf-brand-mark{width:42px;height:42px;flex-shrink:0}
+.hpf-brand-name{font-size:19px;font-weight:800;letter-spacing:1px;line-height:1.25}
+.hpf-brand-name small{display:block;font-size:10px;letter-spacing:3px;color:var(--hpf-amber-deep);font-weight:600}
+.hpf-nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.hpf-nav a{
+  font-size:14.5px;padding:8px 13px;border-radius:999px;color:var(--hpf-ink-soft);
+  transition:.25s;white-space:nowrap;
+}
+.hpf-nav a:hover{background:var(--hpf-cream-2);color:var(--hpf-tomato)}
+.hpf-search{
+  display:flex;align-items:center;gap:6px;background:var(--hpf-white);
+  border:1px solid var(--hpf-line);border-radius:999px;padding:5px 6px 5px 14px;
+  transition:.25s;min-width:210px;
+}
+.hpf-search:focus-within{border-color:var(--hpf-amber);box-shadow:0 0 0 3px rgba(224,138,44,.15)}
+.hpf-search input{border:none;outline:none;background:none;font-size:13.5px;width:100%;color:var(--hpf-ink)}
+.hpf-search button{
+  background:var(--hpf-ink);color:#fff;width:30px;height:30px;border-radius:50%;
+  display:grid;place-items:center;flex-shrink:0;transition:.25s;
+}
+.hpf-search button:hover{background:var(--hpf-tomato)}
+.hpf-search-feedback{
+  position:absolute;top:112px;right:24px;z-index:130;
+  background:var(--hpf-white);border:1px solid var(--hpf-line);border-radius:12px;
+  box-shadow:var(--hpf-shadow);padding:10px 14px;font-size:13px;color:var(--hpf-ink-soft);
+  display:none;max-width:280px;
+}
+.hpf-search-feedback.hpf-show{display:block;animation:hpfFadeUp .3s}
+@keyframes hpfFadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.hpf-burger{display:none;width:42px;height:42px;border-radius:12px;background:var(--hpf-cream-2);place-items:center}
+.hpf-burger span{display:block;width:20px;height:2px;background:var(--hpf-ink);margin:3px 0;border-radius:2px}
+
+/* 首屏：全幅主视觉背景 + 浮动文字 */
+.hpf-hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#2b211a 0%,#5a3a22 55%,#8a4a1f 100%);
+  color:#fff6e8;
+}
+.hpf-hero-bg{position:absolute;inset:0;opacity:.5}
+.hpf-hero-bg svg{width:100%;height:100%;object-fit:cover}
+.hpf-hero .hpf-wrap{position:relative;z-index:2;padding-top:70px;padding-bottom:70px}
+.hpf-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
+  padding:6px 16px;border-radius:999px;margin-bottom:22px;backdrop-filter:blur(4px);
+}
+.hpf-hero-kicker i{width:7px;height:7px;border-radius:50%;background:var(--hpf-amber);display:inline-block}
+.hpf-hero h1{
+  font-size:clamp(34px,5vw,58px);line-height:1.18;letter-spacing:1px;font-weight:900;
+  max-width:820px;text-shadow:0 4px 24px rgba(0,0,0,.35);
+}
+.hpf-hero h1 em{font-style:normal;color:#ffc46b}
+.hpf-hero-sub{max-width:660px;margin-top:20px;font-size:15.5px;line-height:1.9;color:#f4e3c8}
+.hpf-hero-desc{
+  max-width:720px;margin-top:16px;font-size:14px;line-height:1.95;color:#e8d3b2;
+  border-left:3px solid var(--hpf-amber);padding-left:16px;
+}
+.hpf-hero-stats{display:flex;flex-wrap:wrap;gap:38px;margin-top:32px}
+.hpf-hero-stat strong{font-size:30px;font-weight:900;color:#ffc46b;display:block;line-height:1.2}
+.hpf-hero-stat span{font-size:12.5px;color:#e0c9a8;letter-spacing:1px}
+.hpf-hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hpf-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:999px;
+  font-size:14.5px;font-weight:700;transition:.3s;letter-spacing:.5px;
+}
+.hpf-btn-primary{background:linear-gradient(120deg,var(--hpf-amber) 0%,var(--hpf-tomato) 100%);color:#fff;box-shadow:0 8px 24px rgba(192,57,43,.35)}
+.hpf-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(192,57,43,.45)}
+.hpf-btn-ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.hpf-btn-ghost:hover{background:rgba(255,255,255,.14)}
+.hpf-hero-frame{
+  position:absolute;right:4%;bottom:8%;width:290px;height:290px;border-radius:26px;overflow:hidden;
+  transform:rotate(-4deg);box-shadow:0 24px 50px rgba(0,0,0,.35);display:none;
+}
+@media(min-width:1080px){.hpf-hero-frame{display:block}}
+
+/* 通用区块 */
+.hpf-section{padding:66px 0}
+.hpf-section-head{margin-bottom:34px}
+.hpf-section-eyebrow{
+  font-size:12px;letter-spacing:3px;color:var(--hpf-amber-deep);font-weight:700;
+  display:flex;align-items:center;gap:10px;margin-bottom:10px;
+}
+.hpf-section-eyebrow::before{content:"";width:26px;height:2px;background:var(--hpf-tomato);display:block}
+.hpf-section h2{
+  font-size:clamp(24px,3vw,34px);font-weight:900;line-height:1.3;letter-spacing:.5px;color:var(--hpf-ink);
+}
+.hpf-section-lead{margin-top:12px;font-size:14.5px;color:var(--hpf-ink-soft);max-width:760px;line-height:1.9}
+.hpf-alt{background:var(--hpf-cream-2)}
+
+/* 焦点+视频列表 */
+.hpf-focus-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:34px;align-items:start}
+.hpf-focus-main{
+  background:var(--hpf-white);border-radius:var(--hpf-radius);overflow:hidden;
+  box-shadow:var(--hpf-shadow);transition:.35s;
+}
+.hpf-focus-main:hover{transform:translateY(-4px)}
+.hpf-focus-cover{position:relative;aspect-ratio:16/9;overflow:hidden}
+.hpf-focus-cover svg{width:100%;height:100%}
+.hpf-play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.hpf-play span{
+  width:64px;height:64px;border-radius:50%;background:rgba(251,245,234,.92);
+  display:grid;place-items:center;box-shadow:0 6px 22px rgba(0,0,0,.3);transition:.3s;
+}
+.hpf-play span::after{
+  content:"";width:0;height:0;border-left:18px solid var(--hpf-tomato);
+  border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px;
+}
+.hpf-focus-main:hover .hpf-play span{transform:scale(1.08)}
+.hpf-badge{
+  position:absolute;top:14px;left:14px;background:var(--hpf-tomato);color:#fff;
+  font-size:11.5px;padding:4px 12px;border-radius:999px;letter-spacing:1px;font-weight:700;
+}
+.hpf-focus-body{padding:22px 24px 24px}
+.hpf-focus-body h3{font-size:21px;font-weight:800;line-height:1.45;margin-bottom:10px}
+.hpf-focus-body p{font-size:14px;color:var(--hpf-ink-soft);line-height:1.85}
+.hpf-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.hpf-tag{
+  font-size:12px;background:var(--hpf-cream-2);color:var(--hpf-amber-deep);
+  padding:3px 11px;border-radius:999px;border:1px solid var(--hpf-line);
+}
+.hpf-meta{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:#9a8570;margin-top:16px}
+.hpf-actions{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.hpf-act{
+  display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--hpf-ink-soft);
+  background:var(--hpf-cream);border:1px solid var(--hpf-line);padding:7px 14px;border-radius:999px;transition:.25s;
+}
+.hpf-act:hover{border-color:var(--hpf-amber);color:var(--hpf-amber-deep)}
+.hpf-act.hpf-on{background:var(--hpf-tomato);border-color:var(--hpf-tomato);color:#fff}
+.hpf-act.hpf-saved{background:var(--hpf-amber);border-color:var(--hpf-amber);color:#fff}
+
+.hpf-vlist{display:flex;flex-direction:column;gap:16px}
+.hpf-vitem{
+  background:var(--hpf-white);border:1px solid var(--hpf-line);border-radius:14px;
+  padding:18px 20px;transition:.3s;
+}
+.hpf-vitem:hover{transform:translateX(5px);border-color:var(--hpf-amber);box-shadow:var(--hpf-shadow)}
+.hpf-vitem-top{display:flex;align-items:baseline;gap:10px}
+.hpf-vitem-no{font-size:13px;font-weight:900;color:var(--hpf-tomato);flex-shrink:0}
+.hpf-vitem h3{font-size:16px;font-weight:800;line-height:1.5}
+.hpf-vitem p{font-size:13.5px;color:var(--hpf-ink-soft);margin-top:7px;line-height:1.8}
+.hpf-vitem-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:#9a8570;margin-top:10px}
+
+/* 品牌解析 */
+.hpf-parse-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.hpf-parse-card{
+  background:var(--hpf-white);border-radius:var(--hpf-radius);padding:28px 30px;
+  border:1px solid var(--hpf-line);box-shadow:0 6px 20px rgba(120,80,20,.06);
+}
+.hpf-parse-card h3{font-size:18px;font-weight:800;margin-bottom:12px;color:var(--hpf-amber-deep);display:flex;align-items:center;gap:9px}
+.hpf-parse-card h3 i{width:10px;height:10px;border-radius:3px;background:var(--hpf-tomato);display:inline-block;flex-shrink:0}
+.hpf-parse-card p{font-size:14px;line-height:1.95;color:var(--hpf-ink-soft);margin-bottom:10px}
+.hpf-parse-wide{grid-column:1/-1}
+
+/* 专题 */
+.hpf-special-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.hpf-special{
+  background:var(--hpf-white);border-radius:var(--hpf-radius);overflow:hidden;border:1px solid var(--hpf-line);
+  display:flex;flex-direction:column;transition:.3s;
+}
+.hpf-special:hover{transform:translateY(-5px);box-shadow:var(--hpf-shadow)}
+.hpf-special-cover{aspect-ratio:16/10;overflow:hidden;position:relative}
+.hpf-special-cover svg{width:100%;height:100%}
+.hpf-special-state{
+  position:absolute;top:12px;right:12px;font-size:11px;background:rgba(43,33,26,.82);color:#f8ecd8;
+  padding:3px 11px;border-radius:999px;letter-spacing:.5px;
+}
+.hpf-special-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.hpf-special-body h3{font-size:17px;font-weight:800;line-height:1.5;margin-bottom:8px}
+.hpf-special-body>p{font-size:13.5px;color:var(--hpf-ink-soft);line-height:1.8;margin-bottom:14px}
+.hpf-special-list{margin-top:auto;border-top:1px dashed var(--hpf-line);padding-top:12px}
+.hpf-special-list li{font-size:13px;color:var(--hpf-ink-soft);padding:5px 0 5px 16px;position:relative;line-height:1.7}
+.hpf-special-list li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--hpf-amber)}
+
+/* 作者矩阵 */
+.hpf-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.hpf-author{
+  background:var(--hpf-white);border-radius:var(--hpf-radius);padding:24px;border:1px solid var(--hpf-line);
+  display:flex;gap:18px;transition:.3s;
+}
+.hpf-author:hover{border-color:var(--hpf-amber);box-shadow:var(--hpf-shadow)}
+.hpf-avatar{
+  width:64px;height:64px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+  font-size:22px;font-weight:900;color:#fff;letter-spacing:1px;
+}
+.hpf-author-main{min-width:0}
+.hpf-author-main h3{font-size:16.5px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.hpf-author-area{font-size:11.5px;background:var(--hpf-cream-2);color:var(--hpf-amber-deep);padding:2px 9px;border-radius:999px;font-weight:600}
+.hpf-author-main p{font-size:13.5px;color:var(--hpf-ink-soft);line-height:1.8;margin-top:9px}
+.hpf-author-stats{display:flex;gap:16px;font-size:12.5px;color:#9a8570;margin-top:10px;flex-wrap:wrap}
+.hpf-author-stats b{color:var(--hpf-tomato);font-weight:800}
+.hpf-author-more{margin-top:11px;font-size:12.5px;color:var(--hpf-amber-deep);font-weight:700;border-bottom:1px dashed var(--hpf-amber);padding-bottom:1px;display:inline-block}
+
+/* 评论双列 */
+.hpf-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.hpf-comment{
+  background:var(--hpf-white);border-radius:14px;padding:20px 22px;border:1px solid var(--hpf-line);
+  position:relative;
+}
+.hpf-comment::before{
+  content:"“";position:absolute;top:6px;right:16px;font-size:44px;color:var(--hpf-cream-2);
+  font-family:Georgia,serif;line-height:1;
+}
+.hpf-comment p{font-size:13.5px;line-height:1.85;color:var(--hpf-ink-soft);position:relative;z-index:1}
+.hpf-comment-who{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:12.5px;color:#9a8570}
+.hpf-comment-who span:first-child{
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;font-weight:800;color:#fff;flex-shrink:0;
+}
+.hpf-stars{color:var(--hpf-amber);font-size:13px;letter-spacing:1px}
+
+/* 榜单 */
+.hpf-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.hpf-rank{
+  background:var(--hpf-white);border-radius:var(--hpf-radius);padding:24px;border:1px solid var(--hpf-line);
+}
+.hpf-rank h3{font-size:16px;font-weight:800;margin-bottom:16px;display:flex;align-items:center;gap:9px;color:var(--hpf-amber-deep)}
+.hpf-rank h3 i{width:8px;height:8px;border-radius:50%;background:var(--hpf-tomato);display:inline-block}
+.hpf-rank li{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed var(--hpf-line);font-size:13.5px;align-items:baseline}
+.hpf-rank li:last-child{border-bottom:none}
+.hpf-rank-no{font-weight:900;color:var(--hpf-tomato);font-size:13px;width:20px;flex-shrink:0}
+.hpf-rank-title{flex:1;color:var(--hpf-ink-soft);line-height:1.6}
+.hpf-rank-num{font-size:12px;color:#9a8570;white-space:nowrap}
+
+/* FAQ */
+.hpf-faq-wrap{max-width:860px;margin:0 auto}
+.hpf-faq{border:1px solid var(--hpf-line);border-radius:14px;background:var(--hpf-white);margin-bottom:12px;overflow:hidden}
+.hpf-faq summary{
+  padding:17px 22px;font-size:15px;font-weight:700;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;transition:.25s;
+}
+.hpf-faq summary::-webkit-details-marker{display:none}
+.hpf-faq summary::after{
+  content:"+";font-size:20px;color:var(--hpf-amber-deep);font-weight:400;transition:.25s;flex-shrink:0;
+}
+.hpf-faq[open] summary{color:var(--hpf-tomato)}
+.hpf-faq[open] summary::after{content:"−"}
+.hpf-faq p{padding:0 22px 18px;font-size:13.5px;color:var(--hpf-ink-soft);line-height:1.9}
+
+/* 动态 + 合作 */
+.hpf-aux-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:32px}
+.hpf-news li{
+  display:flex;gap:16px;padding:15px 0;border-bottom:1px dashed var(--hpf-line);align-items:flex-start;
+}
+.hpf-news li:last-child{border-bottom:none}
+.hpf-news time{font-size:12.5px;color:var(--hpf-amber-deep);font-weight:700;white-space:nowrap;padding-top:2px}
+.hpf-news p{font-size:14px;color:var(--hpf-ink-soft);line-height:1.75}
+.hpf-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hpf-partner{
+  background:var(--hpf-white);border:1px solid var(--hpf-line);border-radius:12px;
+  padding:18px 14px;text-align:center;font-size:13.5px;font-weight:700;color:var(--hpf-ink-soft);
+  transition:.25s;
+}
+.hpf-partner:hover{border-color:var(--hpf-amber);color:var(--hpf-amber-deep);transform:translateY(-3px)}
+
+/* 投稿 */
+.hpf-submit-band{
+  background:linear-gradient(120deg,#2b211a 0%,#6b3a1a 100%);border-radius:24px;
+  padding:44px 40px;color:#f8ecd8;display:flex;align-items:center;justify-content:space-between;
+  gap:28px;flex-wrap:wrap;margin:0 0 0;
+}
+.hpf-submit-band h2{font-size:26px;font-weight:900;line-height:1.4}
+.hpf-submit-band p{font-size:14px;color:#e2caa6;margin-top:10px;max-width:560px;line-height:1.85}
+
+/* 页脚 */
+.hpf-footer{background:var(--hpf-ink);color:#c9b8a4;padding:56px 0 26px;font-size:13.5px}
+.hpf-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:38px}
+.hpf-footer h4{color:#f8ecd8;font-size:14.5px;font-weight:800;margin-bottom:16px;letter-spacing:.5px}
+.hpf-footer li{padding:4px 0;line-height:1.8}
+.hpf-footer a:hover{color:var(--hpf-amber)}
+.hpf-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.hpf-footer-brand strong{color:#f8ecd8;font-size:17px;letter-spacing:1px}
+.hpf-footer-desc{line-height:1.9;color:#a08e7b}
+.hpf-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;
+  justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#8a7a69;
+}
+
+/* 回顶部 */
+.hpf-top{
+  position:fixed;right:24px;bottom:28px;width:48px;height:48px;border-radius:50%;
+  background:var(--hpf-tomato);color:#fff;display:grid;place-items:center;
+  box-shadow:0 8px 22px rgba(192,57,43,.4);z-index:100;opacity:0;pointer-events:none;transition:.3s;
+  font-size:19px;
+}
+.hpf-top.hpf-top-show{opacity:1;pointer-events:auto}
+.hpf-top:hover{background:var(--hpf-amber)}
+
+/* 弹窗/Toast */
+.hpf-modal{
+  position:fixed;inset:0;background:rgba(20,12,8,.6);z-index:200;
+  display:none;place-items:center;padding:24px;backdrop-filter:blur(3px);
+}
+.hpf-modal.hpf-show{display:grid;animation:hpfFade .25s}
+@keyframes hpfFade{from{opacity:0}to{opacity:1}}
+.hpf-modal-box{
+  background:var(--hpf-white);border-radius:20px;padding:32px;max-width:520px;width:100%;
+  box-shadow:0 24px 60px rgba(0,0,0,.3);position:relative;max-height:86vh;overflow:auto;
+}
+.hpf-modal-box h3{font-size:20px;font-weight:900;margin-bottom:14px;color:var(--hpf-ink)}
+.hpf-modal-box p{font-size:14px;color:var(--hpf-ink-soft);line-height:1.9;margin-bottom:10px}
+.hpf-modal-close{
+  position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;
+  background:var(--hpf-cream-2);color:var(--hpf-ink-soft);display:grid;place-items:center;font-size:17px;
+}
+.hpf-modal-close:hover{background:var(--hpf-tomato);color:#fff}
+.hpf-modal-box textarea{
+  width:100%;min-height:100px;border:1px solid var(--hpf-line);border-radius:12px;padding:12px 14px;
+  font-family:inherit;font-size:14px;resize:vertical;outline:none;background:var(--hpf-cream);
+}
+.hpf-modal-box textarea:focus{border-color:var(--hpf-amber)}
+.hpf-modal-box input{
+  width:100%;border:1px solid var(--hpf-line);border-radius:12px;padding:12px 14px;
+  font-family:inherit;font-size:14px;outline:none;background:var(--hpf-cream);margin-bottom:12px;
+}
+.hpf-modal-box input:focus{border-color:var(--hpf-amber)}
+.hpf-toast{
+  position:fixed;left:50%;bottom:46px;transform:translate(-50%,20px);
+  background:var(--hpf-ink);color:#f8ecd8;padding:12px 26px;border-radius:999px;
+  font-size:13.5px;z-index:300;opacity:0;pointer-events:none;transition:.35s;box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+.hpf-toast.hpf-show{opacity:1;transform:translate(-50%,0)}
+.hpf-sub-note{
+  margin-top:34px;text-align:center;font-size:12.5px;color:#a08e7b;padding:14px;
+  border:1px dashed var(--hpf-line);border-radius:12px;
+}
+.hpf-sub-note strong{color:var(--hpf-amber-deep)}
+
+@media(max-width:1024px){
+  .hpf-focus-grid,.hpf-parse-grid,.hpf-aux-grid{grid-template-columns:1fr}
+  .hpf-special-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hpf-rank-grid{grid-template-columns:1fr}
+  .hpf-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .hpf-nav{
+    position:fixed;top:var(--hpf-sticky);left:0;right:0;background:var(--hpf-cream);
+    flex-direction:column;align-items:stretch;padding:14px 20px 20px;gap:4px;
+    border-bottom:1px solid var(--hpf-line);box-shadow:var(--hpf-shadow);
+    transform:translateY(-130%);transition:.35s;z-index:110;
+  }
+  .hpf-nav.hpf-nav-open{transform:translateY(0)}
+  .hpf-nav a{padding:11px 14px}
+  .hpf-burger{display:grid;margin-left:auto}
+  .hpf-search{display:none;min-width:0}
+  .hpf-search.hpf-search-mobile{display:flex;position:fixed;top:calc(var(--hpf-sticky) + 4px);left:16px;right:16px;z-index:115;box-shadow:var(--hpf-shadow)}
+  .hpf-comments,.hpf-authors{grid-template-columns:1fr}
+  .hpf-search-feedback{top:calc(var(--hpf-sticky) + 60px);right:16px;left:16px;max-width:none}
+}
+@media(max-width:640px){
+  .hpf-wrap{padding:0 18px}
+  .hpf-special-grid{grid-template-columns:1fr}
+  .hpf-hero-stats{gap:24px}
+  .hpf-hero-stat strong{font-size:25px}
+  .hpf-submit-band{padding:30px 24px}
+  .hpf-footer-grid{grid-template-columns:1fr}
+  .hpf-author{flex-direction:column;gap:12px}
+  .hpf-partners{grid-template-columns:1fr 1fr}
+  .hpf-section{padding:50px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="hpf-sticky-zone">
+  <div class="hpf-announce">
+    <div class="hpf-wrap">
+      <span class="hpf-announce-tag">官方发布</span>
+      <span class="hpf-announce-text">11月22日新增《黑椒汁挂勺测试·第3版》与「流泪番茄」腌渍配方高清全片，并开放冬季一人食投稿通道。</span>
+      <a class="hpf-announce-link" href="#hpf-submit">查看投稿入口 →</a>
+    </div>
+  </div>
+
+  <header class="hpf-header">
+    <div class="hpf-wrap">
+      <a class="hpf-brand" href="#hpf-top">
+        <svg class="hpf-brand-mark" viewBox="0 0 64 64" aria-label="黑椒盖饭流泪番茄品牌标识">
+          <circle cx="32" cy="35" r="23" fill="#c0392b"/>
+          <path d="M32 13c2-6 8-9 13-7-2 6-8 9-13 7z" fill="#2e7d32"/>
+          <circle cx="24" cy="31" r="3" fill="#fff"/>
+          <circle cx="40" cy="31" r="3" fill="#fff"/>
+          <path d="M26 43c3 3 9 3 12 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="20" cy="40" r="2" fill="#f6ebd8"/>
+          <circle cx="44" cy="41" r="2" fill="#f6ebd8"/>
+        </svg>
+        <span class="hpf-brand-name">流泪番茄<small>TEARS OF TOMATO</small></span>
+      </a>
+      <nav class="hpf-nav" id="hpf-nav" aria-label="主导航">
+        <a href="#hpf-focus">焦点视频</a>
+        <a href="#hpf-parse">品牌解析</a>
+        <a href="#hpf-special">专题企划</a>
+        <a href="#hpf-authors">创作者</a>
+        <a href="#hpf-voices">口碑评价</a>
+        <a href="#hpf-faq">帮助中心</a>
+      </nav>
+      <div class="hpf-search" id="hpf-search">
+        <input type="text" id="hpf-search-input" placeholder="搜索盖饭 / 番茄 / 黑椒汁…" aria-label="站内搜索">
+        <button type="button" id="hpf-search-btn" aria-label="执行搜索">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+      </div>
+      <button class="hpf-burger" id="hpf-burger" aria-label="展开导航菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+<div class="hpf-search-feedback" id="hpf-search-feedback"></div>
+
+<main id="hpf-top">
+
+  <!-- 首屏 -->
+  <section class="hpf-hero">
+    <div class="hpf-hero-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice" role="img" aria-label="深夜厨房热气蒸腾的黑椒盖饭与流泪番茄主视觉插画">
+        <defs>
+          <radialGradient id="hpfHeroGlow" cx="72%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#ffb347" stop-opacity=".55"/>
+            <stop offset="100%" stop-color="#ffb347" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="hpfHeroBowl" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f2e2c8"/>
+            <stop offset="100%" stop-color="#b8946a"/>
+          </linearGradient>
+          <linearGradient id="hpfHeroRice" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fffaf0"/>
+            <stop offset="100%" stop-color="#e8d9c0"/>
+          </linearGradient>
+        </defs>
+        <rect width="1440" height="620" fill="none"/>
+        <circle cx="1040" cy="250" r="300" fill="url(#hpfHeroGlow)"/>
+        <g opacity=".35" stroke="#f6c78b" stroke-width="1.5" fill="none">
+          <path d="M780 120c40 30 40 60 0 90s-40 60 0 90"/>
+          <path d="M860 90c46 34 46 68 0 102s-46 68 0 102"/>
+          <path d="M940 130c38 28 38 56 0 84s-38 56 0 84"/>
+        </g>
+        <ellipse cx="1040" cy="470" rx="330" ry="46" fill="#1a0f08" opacity=".55"/>
+        <path d="M760 300h560c0 96-70 168-160 168h-240c-90 0-160-72-160-168z" fill="url(#hpfHeroBowl)"/>
+        <ellipse cx="1040" cy="300" rx="280" ry="66" fill="#f8ead2"/>
+        <path d="M790 292c30-70 130-110 250-110s220 40 250 110c-40 30-140 46-250 46s-210-16-250-46z" fill="url(#hpfHeroRice)"/>
+        <g fill="#3a2116" opacity=".9">
+          <circle cx="900" cy="256" r="7"/><circle cx="950" cy="240" r="5"/><circle cx="1000" cy="252" r="8"/>
+          <circle cx="1060" cy="238" r="6"/><circle cx="1120" cy="256" r="7"/><circle cx="1170" cy="244" r="5"/>
+          <circle cx="930" cy="284" r="5"/><circle cx="1040" cy="288" r="6"/><circle cx="1140" cy="284" r="5"/>
+        </g>
+        <g>
+          <circle cx="960" cy="216" r="20" fill="#c0392b"/>
+          <circle cx="960" cy="216" r="9" fill="#e4655a" opacity=".8"/>
+          <path d="M960 196c2-8 8-11 14-9-2 7-8 10-14 9z" fill="#2e7d32"/>
+          <circle cx="1090" cy="222" r="17" fill="#c0392b"/>
+          <circle cx="1090" cy="222" r="8" fill="#e4655a" opacity=".8"/>
+          <path d="M1090 205c2-7 7-10 12-8-2 6-7 9-12 8z" fill="#2e7d32"/>
+        </g>
+        <path d="M900 200c30 26 60 26 90 0" stroke="#f2b47a" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="hpf-hero-frame" aria-hidden="true">
+      <svg viewBox="0 0 290 290" role="img" aria-label="流泪番茄表情特写插画">
+        <rect width="290" height="290" fill="#2b211a"/>
+        <circle cx="145" cy="150" r="88" fill="#c0392b"/>
+        <circle cx="145" cy="150" r="70" fill="#d84b3c"/>
+        <path d="M145 62c6-18 22-27 38-23-5 17-20 26-38 23z" fill="#2e7d32"/>
+        <path d="M126 132c-4 14-8 26-14 40" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none" opacity=".85"/>
+        <path d="M164 132c4 14 8 26 14 40" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none" opacity=".85"/>
+        <circle cx="122" cy="124" r="6" fill="#2b211a"/>
+        <circle cx="168" cy="124" r="6" fill="#2b211a"/>
+        <path d="M126 178c12 10 26 10 38 0" stroke="#2b211a" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <text x="145" y="262" text-anchor="middle" fill="#f6c78b" font-size="15" font-family="sans-serif" letter-spacing="4">TEARS · TOMATO</text>
+      </svg>
+    </div>
+    <div class="hpf-wrap">
+      <span class="hpf-hero-kicker"><i></i>官方网站 · 一人食原创影像品牌</span>
+      <h1>黑椒盖饭流泪番茄</h1>
+      <p class="hpf-hero-sub">一勺黑椒汁落下，热气扑上眼角，眼泪与馋意同时抵达——这是属于每个深夜厨房的真实瞬间。</p>
+      <p class="hpf-hero-desc">作为深耕一人食赛道的视频品牌官网，我们持续运营「黑椒盖饭流泪番茄」原创视频专栏，以专业拍摄与高清画质记录家常料理的细部质感，为企业与创作者搭建值得信赖的内容生态，让平凡的番茄与米饭拥有陪伴人心的力量。</p>
+      <div class="hpf-hero-stats">
+        <div class="hpf-hero-stat"><strong>1280+</strong><span>原创高清影片</span></div>
+        <div class="hpf-hero-stat"><strong>46.8万</strong><span>社区注册用户</span></div>
+        <div class="hpf-hero-stat"><strong>9.6分</strong><span>用户口碑评分</span></div>
+      </div>
+      <div class="hpf-hero-actions">
+        <a class="hpf-btn hpf-btn-primary" href="#hpf-focus">观看本期焦点 →</a>
+        <a class="hpf-btn hpf-btn-ghost" href="#hpf-special">进入专题企划</a>
+        <a class="hpf-btn hpf-btn-ghost" href="#hpf-submit">我要上传作品</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点视频 -->
+  <section class="hpf-section" id="hpf-focus">
+    <div class="hpf-wrap">
+      <div class="hpf-section-head">
+        <p class="hpf-section-eyebrow">FOCUS VIDEO</p>
+        <h2>本周末焦点：一锅黑椒汁熬到挂勺的那三分钟</h2>
+        <p class="hpf-section-lead">黑椒盖饭流泪番茄官方团队本周发布最新焦点影片，完整拆解黑椒汁从爆香到挂勺的每一个临界点，并收录六条社区热门作品，跟着镜头把深夜的饿意煮成温暖的仪式感。</p>
+      </div>
+
+      <div class="hpf-focus-grid">
+        <article class="hpf-focus-main">
+          <div class="hpf-focus-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="黑椒汁浇在盖饭上热气升腾的焦点视频封面">
+              <defs>
+                <linearGradient id="hpfFocusBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#3a2116"/><stop offset="100%" stop-color="#8a4a1f"/>
+                </linearGradient>
+                <linearGradient id="hpfFocusPan" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#d9b98c"/><stop offset="100%" stop-color="#8d6a43"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#hpfFocusBg)"/>
+              <g opacity=".4" stroke="#ffcf8f" stroke-width="1.4" fill="none">
+                <path d="M120 60c26 20 26 40 0 60s-26 40 0 60"/>
+                <path d="M170 40c30 24 30 48 0 72s-30 48 0 72"/>
+              </g>
+              <ellipse cx="330" cy="300" rx="230" ry="34" fill="#1a0f08" opacity=".5"/>
+              <path d="M170 200h320c0 62-52 108-116 108h-88c-64 0-116-46-116-108z" fill="url(#hpfFocusPan)"/>
+              <ellipse cx="330" cy="200" rx="160" ry="40" fill="#f6ecd9"/>
+              <path d="M190 194c20-42 76-66 140-66s120 24 140 66c-26 18-80 28-140 28s-114-10-140-28z" fill="#fffaf0"/>
+              <g fill="#3a2116" opacity=".92">
+                <circle cx="250" cy="176" r="5"/><circle cx="290" cy="164" r="4"/><circle cx="330" cy="178" r="6"/>
+                <circle cx="380" cy="166" r="4.5"/><circle cx="418" cy="180" r="5"/>
+              </g>
+              <circle cx="290" cy="146" r="15" fill="#c0392b"/>
+              <circle cx="290" cy="146" r="6" fill="#e4655a"/>
+              <circle cx="380" cy="150" r="13" fill="#c0392b"/>
+              <circle cx="380" cy="150" r="5" fill="#e4655a"/>
+              <path d="M330 120c0-26 34-46 74-40-8 26-34 44-74 40z" fill="#ffb347" opacity=".8"/>
+              <text x="330" y="342" text-anchor="middle" fill="#f6c78b" font-size="13" font-family="sans-serif" letter-spacing="3">BLACK PEPPER · RICE BOWL</text>
+            </svg>
+            <span class="hpf-badge">本周焦点 · 4K</span>
+            <div class="hpf-play"><span></span></div>
+          </div>
+          <div class="hpf-focus-body">
+            <h3>黑椒汁挂勺测试：三分钟决定一碗盖饭的成败</h3>
+            <p>从黄油与蒜末爆香，到黑胡椒碎在油里翻滚出辛香，再到淀粉水入锅后不断翻动的稠度判断，主厨用一整条长镜头把"挂勺"这个抽象标准拍成了肉眼可辨的视觉语言。影片还附赠了流泪番茄的腌渍时间表，酸甜比例按克标注。</p>
+            <div class="hpf-tags">
+              <span class="hpf-tag">教程干货</span>
+              <span class="hpf-tag">一人食</span>
+              <span class="hpf-tag">黑椒汁</span>
+              <span class="hpf-tag">高清正版</span>
+            </div>
+            <div class="hpf-meta">
+              <span>创作者：老周的小灶台</span>
+              <span>时长 12:36</span>
+              <span>播放 38.2万</span>
+            </div>
+            <div class="hpf-actions">
+              <button class="hpf-act" type="button" data-like>👍 点赞 <b data-like-count>12480</b></button>
+              <button class="hpf-act" type="button" data-save>♡ 收藏</button>
+              <button class="hpf-act" type="button" data-share>⤴ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="hpf-vlist">
+          <article class="hpf-vitem">
+            <div class="hpf-vitem-top"><span class="hpf-vitem-no">01</span><h3>流泪番茄的第一口：为什么酸甜要分两次下锅</h3></div>
+            <p>把番茄分两批处理，一批炒成酱提供厚度，一批保留果肉提供爆汁感，这是黑椒盖饭流泪番茄实验室验证过 27 次的做法。</p>
+            <div class="hpf-meta"><span>小满炊事馆</span><span>播放 21.6万</span><span>收藏 9860</span></div>
+            <div class="hpf-actions">
+              <button class="hpf-act" type="button" data-like>👍 <b data-like-count>6320</b></button>
+              <button class="hpf-act" type="button" data-save>♡ 收藏</button>
+            </div>
+          </article>
+          <article class="hpf-vitem">
+            <div class="hpf-vitem-top"><span class="hpf-vitem-no">02</span><h3>深夜十一点的盖饭：一位加班者的三分钟厨房</h3></div>
+            <p>镜头跟着一位产品经理回到家，用前一晚的剩饭和两颗番茄，做出了一碗让评论区集体破防的黑椒盖饭。</p>
+            <div class="hpf-meta"><span>阿烛的深夜食堂</span><span>播放 18.9万</span><span>收藏 7210</span></div>
+            <div class="hpf-actions">
+              <button class="hpf-act" type="button" data-like>👍 <b data-like-count>5480</b></button>
+              <button class="hpf-act" type="button" data-save>♡ 收藏</button>
+            </div>
+          </article>
+          <article class="hpf-vitem">
+            <div class="hpf-vitem-top"><span class="hpf-vitem-no">03</span><h3>黑胡椒现磨 vs 预磨：盲测十碗盖饭后的结论</h3></div>
+            <p>我们请来五位社区用户做盲测，从香气释放、辛度曲线与回甘三个维度记录，结果和大多数人想的不一样。</p>
+            <div class="hpf-meta"><span>测评组·第六口锅</span><span>播放 15.4万</span><span>收藏 6120</span></div>
+            <div class="hpf-actions">
+              <button class="hpf-act" type="button" data-like>👍 <b data-like-count>4710</b></button>
+              <button class="hpf-act" type="button" data-save>♡ 收藏</button>
+            </div>
+          </article>
+          <article class="hpf-vitem">
+            <div class="hpf-vitem-top"><span class="hpf-vitem-no">04</span><h3>一颗番茄的旅程：从城郊菜园到深夜灶台</h3></div>
+            <p>跟随一位城郊种植户的清晨，看番茄如何被挑选、装筐、送达城市厨房，这是品牌故事线里最安静的一集。</p>
+            <div class="hpf-meta"><span>镜田纪实</span><span>播放 12.7万</span><span>收藏 5040</span></div>
+            <div class="hpf-actions">
+              <button class="hpf-act" type="button" data-like>👍 <b data-like-count>3890</b></button>
+              <button class="hpf-act" type="button" data-save>♡ 收藏</button>
+            </div>
+          </article>
+          <article class="hpf-vitem">
+            <div class="hpf-vitem-top"><span class="hpf-vitem-no">05</span><h3>给爸妈做一碗不辣的黑椒盖饭：减辛版配方</h3></div>
+            <p>把黑胡椒减到三分之二，用洋葱与番茄的甜度补回层次，评论区里最多人说"这碗我要收藏给家里人"。</p>
+            <div class="hpf-meta"><span>小满炊事馆</span><span>播放 10.2万</span><span>收藏 4380</span></div>
+            <div class="hpf-actions">
+              <button class="hpf-act" type="button" data-like>👍 <b data-like-count>3120</b></button>
+              <button class="hpf-act" type="button" data-save>♡ 收藏</button>
+            </div>
+          </article>
+          <article class="hpf-vitem">
+            <div class="hpf-vitem-top"><span class="hpf-vitem-no">06</span><h3>剪辑幕后：一碗盖饭的十二个补光位置</h3></div>
+            <p>品牌后期团队首次公开美食视频的布光图，解释为什么热气需要侧逆光、酱汁需要低角度掠射。</p>
+            <div class="hpf-meta"><span>后期组·阿岚</span><span>播放 8.9万</span><span>收藏 3760</span></div>
+            <div class="hpf-actions">
+              <button class="hpf-act" type="button" data-like>👍 <b data-like-count>2640</b></button>
+              <button class="hpf-act" type="button" data-save>♡ 收藏</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析（关键词解析 800 字以上） -->
+  <section class="hpf-section hpf-alt" id="hpf-parse">
+    <div class="hpf-wrap">
+      <div class="hpf-section-head">
+        <p class="hpf-section-eyebrow">BRAND READING</p>
+        <h2>读懂黑椒盖饭流泪番茄：一碗饭里的内容方法论</h2>
+        <p class="hpf-section-lead">"黑椒盖饭"是具体的味觉入口，"流泪番茄"是情绪化的品牌记忆点。作为官方网站，我们愿意把这两个词背后的判断标准、创作逻辑与社区共识完整摊开，让每一位新来的创作者都看得懂我们在坚持什么。</p>
+      </div>
+
+      <div class="hpf-parse-grid">
+        <article class="hpf-parse-card">
+          <h3><i></i>味觉坐标：为什么是黑椒与番茄</h3>
+          <p>黑椒盖饭流泪番茄这个品牌名不是拼贴，而是一次精准的味觉定位。黑胡椒提供的前段辛香足够直接，能在打开盖子的瞬间抓住注意力；番茄提供的酸甜则负责中后段的回旋，让一碗饭不至于只剩刺激。我们把这种结构称为"先冲后回"，它也是官网上所有原创影片反复验证的味觉骨架。</p>
+          <p>在品牌创立初期的厨房试验里，团队曾用三十多种黑胡椒研磨粗细做过对照，最终把"中等偏粗、现磨现用"写进了官方制作标准。原因很朴素：过细的粉末在热油里会迅速焦化发苦，过粗又难以均匀附着米粒。而流泪番茄的腌渍版本，则坚持在冷藏 6 小时后使用，让果肉的纤维结构松弛，酸味从尖锐转为柔和。这些细节并非炫技，而是我们判断一条美食视频是否具备专业度的基本尺子。</p>
+        </article>
+
+        <article class="hpf-parse-card">
+          <h3><i></i>情绪命名：眼泪是品牌最柔软的部分</h3>
+          <p>"流泪"三个字曾经让团队内部争论了很久。有人担心它显得沉重，但我们最后保留了它，因为它足够真实。深夜做饭的人，常常不是因为悲伤才流泪，而是被热气熏到、被辣到、被一口熟悉的味道击中。品牌把这种"生理性流泪"和"情绪性流泪"叠在一起，形成了温暖而不煽情的表达方式。</p>
+          <p>在内容生态上，这意味着我们的原创影片不会刻意制造戏剧冲突。镜头可以长时间停留在一锅酱汁冒泡的画面上，也可以安静记录一个人吃完最后一口饭后放下勺子的动作。我们相信真实的力量来自细节密度，而不是情绪强度。社区里那些被反复收藏的作品，往往都是把生活拍得足够具体的那一类。这也是官方网站对创作者最核心的建议：先拍清楚，再谈动人。</p>
+        </article>
+
+        <article class="hpf-parse-card hpf-parse-wide">
+          <h3><i></i>内容生态：从一条盖饭视频到可持续的创作社区</h3>
+          <p>如果只把黑椒盖饭流泪番茄理解成美食教程账号，会低估这个品牌想做的事。官网目前的内容结构由三条线并行：第一条是"可复刻的教程"，强调克数、火候与时间，服务于真正想下厨的人；第二条是"可共鸣的故事"，记录普通人与一碗饭之间的关系，服务于需要陪伴感的观众；第三条是"可讨论的测评"，用对照实验与数据说话，服务于愿意较真的社区成员。三条线互相供给，教程提供信任，故事提供黏性，测评提供话题，共同构成持续运营的内容生态。</p>
+          <p>在创作者支持层面，平台提供统一的拍摄规范模板、调色参考与字幕样式建议，让新加入的创作者不必从零摸索。我们更愿意把这种支持称为"品质底座"：当画面清晰度、收音质量与信息准确度达到基准线之后，创作者的个性才有被看见的空间。与此同时，官方每季度会整理一次社区投票结果，把高票需求转化为下季度的专题方向，例如这次的"深夜一人食"企划就来自超过 4200 名用户的投票。用户至上不是口号，而是把决策权部分交还社区。</p>
+          <p>在商业合作上，品牌坚持把合作内容明确标注，并拒绝影响测评结论的植入。我们深知口碑是这个垂直领域最稀缺的资产，一次不诚实的推荐可能抵消数月积累的信任。因此，官网的合作墙只呈现经过双方确认的伙伴，合作影片会单独归类，观众可以清楚地分辨哪些是品牌内容、哪些是创作者自发表达。这种透明度，也是我们敢于把"值得信赖"写进品牌介绍的原因。</p>
+          <p>在更长的时间尺度上，黑椒盖饭流泪番茄希望成为一人食文化的一份档案。我们持续收集不同城市、不同职业、不同年龄段的厨房片段，记录他们如何用有限的设备和食材完成一顿认真的饭。这些素材不会都成为爆款，但它们共同构成了一个有厚度的内容库，让后来的人能看到这个时代普通人如何吃饭、如何照顾自己。这是品牌的匠心所在，也是我们理解的社会责任——不必宏大，但要持续。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="hpf-section" id="hpf-special">
+    <div class="hpf-wrap">
+      <div class="hpf-section-head">
+        <p class="hpf-section-eyebrow">SPECIAL PROGRAMS</p>
+        <h2>专题企划：三条正在更新的内容线</h2>
+        <p class="hpf-section-lead">黑椒盖饭流泪番茄的专题不是合集，而是有明确问题意识的长期企划。每个专题都配有固定的更新节奏与创作者名单，观众可以持续追更，也可以报名参与共创。</p>
+      </div>
+
+      <div class="hpf-special-grid">
+        <article class="hpf-special">
+          <div class="hpf-special-cover">
+            <svg viewBox="0 0 480 300" role="img" aria-label="深夜一人食专题封面：台灯下的一碗盖饭">
+              <defs><linearGradient id="hpfSp1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1f2a3a"/><stop offset="100%" stop-color="#4a3a2a"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#hpfSp1)"/>
+              <circle cx="360" cy="70" r="52" fill="#ffd88a" opacity=".18"/>
+              <path d="M120 70v90h150V70z" fill="#ffd88a" opacity=".12"/>
+              <path d="M195 160l-60 120h120z" fill="#ffd88a" opacity=".07"/>
+              <ellipse cx="280" cy="250" rx="120" ry="20" fill="#000" opacity=".4"/>
+              <path d="M190 180h180c0 40-34 70-74 70h-32c-40 0-74-30-74-70z" fill="#c9a97c"/>
+              <ellipse cx="280" cy="180" rx="90" ry="22" fill="#f6ecd9"/>
+              <g fill="#3a2116"><circle cx="250" cy="172" r="3"/><circle cx="280" cy="164" r="4"/><circle cx="310" cy="174" r="3"/></g>
+              <circle cx="262" cy="152" r="9" fill="#c0392b"/>
+              <circle cx="300" cy="156" r="8" fill="#c0392b"/>
+              <path d="M280 130c0-18 22-30 48-26-6 18-22 28-48 26z" fill="#ffb347" opacity=".7"/>
+            </svg>
+            <span class="hpf-special-state">更新中 · 第 7 期</span>
+          </div>
+          <div class="hpf-special-body">
+            <h3>深夜一人食</h3>
+            <p>记录城市里那些独自吃饭的人，以及他们如何用有限的厨房做出认真的晚饭。专题强调真实记录，不摆盘、不补拍。</p>
+            <ul class="hpf-special-list">
+              <li>加班回家后的三分钟盖饭</li>
+              <li>租房厨房的最小设备清单</li>
+              <li>一个人也要好好摆的那双筷子</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="hpf-special">
+          <div class="hpf-special-cover">
+            <svg viewBox="0 0 480 300" role="img" aria-label="番茄研究所专题封面：切开的番茄与色卡对照">
+              <defs><linearGradient id="hpfSp2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f6ebd8"/><stop offset="100%" stop-color="#e8c9a0"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#hpfSp2)"/>
+              <g opacity=".85">
+                <rect x="60" y="60" width="52" height="52" rx="8" fill="#c0392b"/>
+                <rect x="124" y="60" width="52" height="52" rx="8" fill="#d84b3c"/>
+                <rect x="188" y="60" width="52" height="52" rx="8" fill="#e4655a"/>
+                <rect x="252" y="60" width="52" height="52" rx="8" fill="#ef8a7a"/>
+                <rect x="316" y="60" width="52" height="52" rx="8" fill="#f6b3a4"/>
+                <rect x="380" y="60" width="52" height="52" rx="8" fill="#fad0c4"/>
+              </g>
+              <circle cx="300" cy="208" r="56" fill="#c0392b"/>
+              <circle cx="300" cy="208" r="44" fill="#e4655a"/>
+              <g fill="#c0392b" opacity=".55">
+                <ellipse cx="300" cy="180" rx="7" ry="11"/><ellipse cx="300" cy="236" rx="7" ry="11"/>
+                <ellipse cx="272" cy="208" rx="11" ry="7"/><ellipse cx="328" cy="208" rx="11" ry="7"/>
+              </g>
+              <path d="M300 152c4-14 16-20 28-17-4 13-15 19-28 17z" fill="#2e7d32"/>
+              <path d="M110 210h120" stroke="#8d6a43" stroke-width="2" stroke-dasharray="5 7"/>
+              <path d="M110 232h88" stroke="#8d6a43" stroke-width="2" stroke-dasharray="5 7"/>
+            </svg>
+            <span class="hpf-special-state">更新中 · 第 4 期</span>
+          </div>
+          <div class="hpf-special-body">
+            <h3>番茄研究所</h3>
+            <p>把番茄当作研究对象：品种差异、酸度曲线、加热后的风味变化，用可重复的实验方式讲清楚。</p>
+            <ul class="hpf-special-list">
+              <li>五种番茄同锅盲测实录</li>
+              <li>糖与盐：酸甜平衡的两个变量</li>
+              <li>番茄皮到底要不要去掉</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="hpf-special">
+          <div class="hpf-special-cover">
+            <svg viewBox="0 0 480 300" role="img" aria-label="黑椒实验室专题封面：研磨器与黑椒颗粒排列">
+              <defs><linearGradient id="hpfSp3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2b211a"/><stop offset="100%" stop-color="#5a3a22"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#hpfSp3)"/>
+              <g fill="#e8d3b2" opacity=".9">
+                <circle cx="100" cy="90" r="6"/><circle cx="130" cy="120" r="7"/><circle cx="160" cy="80" r="5"/>
+                <circle cx="200" cy="110" r="8"/><circle cx="240" cy="72" r="6"/><circle cx="280" cy="104" r="5"/>
+                <circle cx="320" cy="66" r="7"/><circle cx="360" cy="100" r="6"/><circle cx="400" cy="80" r="5"/>
+              </g>
+              <rect x="180" y="150" width="120" height="34" rx="10" fill="#c9a97c"/>
+              <rect x="200" y="86" width="80" height="70" rx="14" fill="#f2e2c8"/>
+              <circle cx="240" cy="86" r="16" fill="#e8d3b2"/>
+              <path d="M232 70h16" stroke="#8d6a43" stroke-width="6" stroke-linecap="round"/>
+              <path d="M300 200c20 0 40 10 40 34h-120c0-24 20-34 40-34z" fill="#c9a97c" opacity=".8"/>
+              <text x="240" y="270" text-anchor="middle" fill="#f6c78b" font-size="13" font-family="sans-serif" letter-spacing="3">PEPPER LAB</text>
+            </svg>
+            <span class="hpf-special-state">已完结 · 全 9 期</span>
+          </div>
+          <div class="hpf-special-body">
+            <h3>黑椒实验室</h3>
+            <p>用对照实验回答关于黑胡椒的高频疑问，完整呈现测试条件与结论，方便观众自行复现。</p>
+            <ul class="hpf-special-list">
+              <li>研磨粗细对辛香释放的影响</li>
+              <li>下锅顺序与焦苦味的临界点</li>
+              <li>黑椒汁冷藏后的风味流失曲线</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="hpf-section hpf-alt" id="hpf-authors">
+    <div class="hpf-wrap">
+      <div class="hpf-section-head">
+        <p class="hpf-section-eyebrow">CREATORS</p>
+        <h2>社区创作者矩阵：把一碗饭拍出各自的样子</h2>
+        <p class="hpf-section-lead">黑椒盖饭流泪番茄的创作者来自不同城市与职业，有厨师、上班族、纪录片摄影师，也有刚拿起手机的新人。品牌为他们提供统一的品质规范与展示位，作品风格则完全交给个人。</p>
+      </div>
+
+      <div class="hpf-authors">
+        <article class="hpf-author">
+          <div class="hpf-avatar" style="background:linear-gradient(135deg,#e08a2c,#c0392b)">周</div>
+          <div class="hpf-author-main">
+            <h3>老周的小灶台 <span class="hpf-author-area">教程 / 火候</span></h3>
+            <p>前连锁餐厅酱汁组负责人，做了十七年黑椒汁。镜头里的他话不多，但会为一锅酱汁反复重拍。他坚持把所有配比写进字幕，认为可复刻才是教程的底线，也是平台内容生态最需要的确定感。</p>
+            <div class="hpf-author-stats"><span>作品 <b>214</b></span><span>粉丝 <b>12.6万</b></span><span>获赞 <b>86.4万</b></span></div>
+            <button class="hpf-author-more" type="button" data-author="老周的小灶台">查看作者档案</button>
+          </div>
+        </article>
+
+        <article class="hpf-author">
+          <div class="hpf-avatar" style="background:linear-gradient(135deg,#c0392b,#e4655a)">烛</div>
+          <div class="hpf-author-main">
+            <h3>阿烛的深夜食堂 <span class="hpf-author-area">故事 / 一人食</span></h3>
+            <p>广告公司文案，晚上十一点后开始拍视频。她的作品常常只有一个固定机位，却能把加班、独居、想家的情绪拍得克制。评论区里最多的留言是"看到你，我也去煮了碗饭"，她把这句当作最高评价。</p>
+            <div class="hpf-author-stats"><span>作品 <b>96</b></span><span>粉丝 <b>8.9万</b></span><span>获赞 <b>52.1万</b></span></div>
+            <button class="hpf-author-more" type="button" data-author="阿烛的深夜食堂">查看作者档案</button>
+          </div>
+        </article>
+
+        <article class="hpf-author">
+          <div class="hpf-avatar" style="background:linear-gradient(135deg,#8d6a43,#c9a97c)">满</div>
+          <div class="hpf-author-main">
+            <h3>小满炊事馆 <span class="hpf-author-area">家常 / 减辛</span></h3>
+            <p>两个孩子的妈妈，擅长把重口味菜式改成全家都能吃的版本。她会在视频里解释每一步改动的理由，比如为什么减辛要先补甜，为什么番茄要分两次下锅。她的实用技巧类作品在社区里转发率常年靠前。</p>
+            <div class="hpf-author-stats"><span>作品 <b>168</b></span><span>粉丝 <b>10.2万</b></span><span>获赞 <b>71.3万</b></span></div>
+            <button class="hpf-author-more" type="button" data-author="小满炊事馆">查看作者档案</button>
+          </div>
+        </article>
+
+        <article class="hpf-author">
+          <div class="hpf-avatar" style="background:linear-gradient(135deg,#2b211a,#5a3a22)">镜</div>
+          <div class="hpf-author-main">
+            <h3>镜田纪实 <span class="hpf-author-area">纪实 / 城市探索</span></h3>
+            <p>纪录片摄影出身，习惯用长镜头等待一个真实瞬间。他为品牌拍摄的"一颗番茄的旅程"跟拍了一位种植户整整两天，最终成片只有九分钟。他说食物视频的价值不只在食物，更在食物背后的人与土地。</p>
+            <div class="hpf-author-stats"><span>作品 <b>47</b></span><span>粉丝 <b>6.4万</b></span><span>获赞 <b>33.8万</b></span></div>
+            <button class="hpf-author-more" type="button" data-author="镜田纪实">查看作者档案</button>
+          </div>
+        </article>
+
+        <article class="hpf-author">
+          <div class="hpf-avatar" style="background:linear-gradient(135deg,#2e7d32,#7cb342)">测</div>
+          <div class="hpf-author-main">
+            <h3>第六口锅 <span class="hpf-author-area">测评 / 数据</span></h3>
+            <p>由三位理工科背景的食客组成，擅长做对照实验与数据可视化。他们把黑椒汁的黏度、香气与咸度拆成可量化的指标，用图表呈现结论。作品风格冷静，但常被社区称为"最省钱的测评"。</p>
+            <div class="hpf-author-stats"><span>作品 <b>63</b></span><span>粉丝 <b>7.7万</b></span><span>获赞 <b>41.6万</b></span></div>
+            <button class="hpf-author-more" type="button" data-author="第六口锅">查看作者档案</button>
+          </div>
+        </article>
+
+        <article class="hpf-author">
+          <div class="hpf-avatar" style="background:linear-gradient(135deg,#6a4c93,#b39ddb)">岚</div>
+          <div class="hpf-author-main">
+            <h3>后期组·阿岚 <span class="hpf-author-area">幕后 / 剪辑教学</span></h3>
+            <p>品牌后期团队成员，负责把创作者的素材整理成有节奏的成片。她开设的剪辑幕后系列解释补光、调色与音效设计，帮助新人理解美食视频的技术底层。她相信好的后期应该让人忘记后期存在。</p>
+            <div class="hpf-author-stats"><span>作品 <b>38</b></span><span>粉丝 <b>5.1万</b></span><span>获赞 <b>27.9万</b></span></div>
+            <button class="hpf-author-more" type="button" data-author="后期组·阿岚">查看作者档案</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评论 + 榜单 -->
+  <section class="hpf-section" id="hpf-voices">
+    <div class="hpf-wrap">
+      <div class="hpf-section-head">
+        <p class="hpf-section-eyebrow">COMMUNITY VOICES</p>
+        <h2>社区口碑与本周榜单</h2>
+        <p class="hpf-section-lead">每一条评价都来自真实观看与亲手复刻。黑椒盖饭流泪番茄相信口碑的力量来自具体，所以我们保留用户的原始措辞，也公开本周的热度与新人数据。</p>
+      </div>
+
+      <div class="hpf-comments">
+        <article class="hpf-comment">
+          <p>照着老周的视频做的，第一次知道黑椒汁要熬到勺子背面挂住一层才够稠。以前总觉得是自己火候小，原来是水加多了。</p>
+          <div class="hpf-comment-who"><span style="background:#c0392b">林</span><span>林小满</span><span class="hpf-stars">★★★★★</span></div>
+        </article>
+        <article class="hpf-comment">
+          <p>阿烛那条深夜十一点的视频我看了三遍，不是学做菜，是觉得有人在替我过那样的晚上。第二天我真的去买了番茄。</p>
+          <div class="hpf-comment-who"><span style="background:#e08a2c">陈</span><span>陈默</span><span class="hpf-stars">★★★★★</span></div>
+        </article>
+        <article class="hpf-comment">
+          <p>测评组这次的数据做得挺扎实，但我想说盲测人数只有五位，结论可能还不够稳。希望下一期能扩大样本，我愿意报名参加。</p>
+          <div class="hpf-comment-who"><span style="background:#5a3a22">周</span><span>周知行</span><span class="hpf-stars">★★★★☆</span></div>
+        </article>
+        <article class="hpf-comment">
+          <p>小满的减辛版救了我家晚饭。我爸不能吃太辣，但一直馋黑椒味，这个配方他终于能一起吃。谢谢你们把它拍得那么细。</p>
+          <div class="hpf-comment-who"><span style="background:#2e7d32">何</span><span>何一鸣</span><span class="hpf-stars">★★★★★</span></div>
+        </article>
+        <article class="hpf-comment">
+          <p>画质确实好，热气的层次都能看清。作为同行说一下，侧逆光那套布光值得学。</p>
+          <div class="hpf-comment-who"><span style="background:#6a4c93">郑</span><span>郑南</span><span class="hpf-stars">★★★★★</span></div>
+        </article>
+        <article class="hpf-comment">
+          <p>专题更新有点慢，第七期等了两周。不过每期都挺值，能理解。就是希望更新日历能提前一点公布。</p>
+          <div class="hpf-comment-who"><span style="background:#8d6a43">苏</span><span>苏晚</span><span class="hpf-stars">★★★☆☆</span></div>
+        </article>
+        <article class="hpf-comment">
+          <p>投稿被选中过一次，收到了后台的修改建议，写了满满一页。那种被认真对待的感觉比播放量更让人开心。</p>
+          <div class="hpf-comment-who"><span style="background:#c0392b">许</span><span>许嘉禾</span><span class="hpf-stars">★★★★★</span></div>
+        </article>
+        <article class="hpf-comment">
+          <p>番茄研究所那期讲番茄皮去留，我按两种做法各做了一遍，家里人都说留皮的更香。这种能自己验证的内容挺少见的。</p>
+          <div class="hpf-comment-who"><span style="background:#e08a2c">罗</span><span>罗青</span><span class="hpf-stars">★★★★★</span></div>
+        </article>
+      </div>
+
+      <div class="hpf-rank-grid" style="margin-top:34px">
+        <article class="hpf-rank">
+          <h3><i></i>本周热度榜</h3>
+          <ul>
+            <li><span class="hpf-rank-no">1</span><span class="hpf-rank-title">黑椒汁挂勺测试：三分钟决定成败</span><span class="hpf-rank-num">38.2万</span></li>
+            <li><span class="hpf-rank-no">2</span><span class="hpf-rank-title">流泪番茄的第一口：酸甜分两次下锅</span><span class="hpf-rank-num">21.6万</span></li>
+            <li><span class="hpf-rank-no">3</span><span class="hpf-rank-title">深夜十一点的盖饭：加班者的三分钟厨房</span><span class="hpf-rank-num">18.9万</span></li>
+            <li><span class="hpf-rank-no">4</span><span class="hpf-rank-title">黑胡椒现磨 vs 预磨：盲测十碗后的结论</span><span class="hpf-rank-num">15.4万</span></li>
+          </ul>
+        </article>
+        <article class="hpf-rank">
+          <h3><i></i>新人潜力榜</h3>
+          <ul>
+            <li><span class="hpf-rank-no">1</span><span class="hpf-rank-title">一碗饭的十五秒：手机党也能拍好热气</span><span class="hpf-rank-num">新人 · 阿橘</span></li>
+            <li><span class="hpf-rank-no">2</span><span class="hpf-rank-title">出租屋里的两口锅与一颗番茄</span><span class="hpf-rank-num">新人 · 木木</span></li>
+            <li><span class="hpf-rank-no">3</span><span class="hpf-rank-title">给室友做的第一顿黑椒盖饭</span><span class="hpf-rank-num">新人 · 小透</span></li>
+            <li><span class="hpf-rank-no">4</span><span class="hpf-rank-title">食堂打饭阿姨教我的收汁方法</span><span class="hpf-rank-num">新人 · 老廖</span></li>
+          </ul>
+        </article>
+        <article class="hpf-rank">
+          <h3><i></i>口碑好评榜</h3>
+          <ul>
+            <li><span class="hpf-rank-no">1</span><span class="hpf-rank-title">减辛版黑椒盖饭：给爸妈的那一碗</span><span class="hpf-rank-num">9.8分</span></li>
+            <li><span class="hpf-rank-no">2</span><span class="hpf-rank-title">剪辑幕后：一碗盖饭的十二个补光位置</span><span class="hpf-rank-num">9.7分</span></li>
+            <li><span class="hpf-rank-no">3</span><span class="hpf-rank-title">一颗番茄的旅程：从菜园到灶台</span><span class="hpf-rank-num">9.6分</span></li>
+            <li><span class="hpf-rank-no">4</span><span class="hpf-rank-title">番茄皮到底要不要去掉：两锅对照</span><span class="hpf-rank-num">9.5分</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动态 + 合作 -->
+  <section class="hpf-section hpf-alt" id="hpf-news">
+    <div class="hpf-wrap">
+      <div class="hpf-section-head">
+        <p class="hpf-section-eyebrow">UPDATES &amp; PARTNERS</p>
+        <h2>企业动态与合作伙伴</h2>
+        <p class="hpf-section-lead">官方发布的内容更新、活动预告与合作信息都会集中在这里，方便创作者与观众第一时间了解黑椒盖饭流泪番茄的运营节奏。</p>
+      </div>
+
+      <div class="hpf-aux-grid">
+        <div>
+          <ul class="hpf-news">
+            <li><time datetime="2026-11-22">11-22</time><p>官方发布《黑椒汁挂勺测试·第3版》4K 全片，同步上线番茄腌渍时间表下载页，支持高清离线保存。</p></li>
+            <li><time datetime="2026-11-15">11-15</time><p>冬季一人食投稿通道开启，主题为"冷天里的一碗热饭"，投稿截止 12 月 20 日，入选作品将进入官方专题。</p></li>
+            <li><time datetime="2026-11-08">11-08</time><p>社区创作者见面会第二站在城南市集举办，现场设置盖饭复刻挑战与投票环节，共 260 位用户参与。</p></li>
+            <li><time datetime="2026-10-30">10-30</time><p>平台完成播放器升级，新增高清画质记忆与收藏夹批量管理，历史收藏可一键迁移。</p></li>
+            <li><time datetime="2026-10-18">10-18</time><p>品牌与三家本地食材供应商达成长期合作，后续测评影片的原料来源将在片尾标注。</p></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:16px;font-weight:800;margin-bottom:16px;color:var(--hpf-amber-deep)">合作品牌与伙伴</h3>
+          <div class="hpf-partners">
+            <div class="hpf-partner">城南市集</div>
+            <div class="hpf-partner">禾田食材</div>
+            <div class="hpf-partner">一口铸铁</div>
+            <div class="hpf-partner">慢火影像</div>
+            <div class="hpf-partner">番茄种植合作社</div>
+            <div class="hpf-partner">深夜电台</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="hpf-section" id="hpf-faq">
+    <div class="hpf-wrap">
+      <div class="hpf-section-head" style="text-align:center">
+        <p class="hpf-section-eyebrow" style="justify-content:center">FAQ</p>
+        <h2>关于观看、投稿与合作的常见问题</h2>
+      </div>
+      <div class="hpf-faq-wrap">
+        <details class="hpf-faq" open>
+          <summary>黑椒盖饭流泪番茄的影片可以商用或二次剪辑吗？</summary>
+          <p>官网所有标注"原创正版"的影片版权归品牌或对应创作者所有，个人学习与家庭复刻无需授权。若需用于商业放映、账号搬运或二次剪辑，请通过投稿页下方的联系表单说明用途，我们会在三个工作日内回复授权方案。</p>
+        </details>
+        <details class="hpf-faq">
+          <summary>投稿有什么硬性要求？手机拍摄可以吗？</summary>
+          <p>可以。我们更看重内容的具体程度而非设备。基础要求为：横屏或竖屏皆可，分辨率不低于 1080P，收音清晰，食材用量与步骤可辨。手机拍摄时建议把主光源放在侧后方，这样热气与酱汁质感会更明显。</p>
+        </details>
+        <details class="hpf-faq">
+          <summary>为什么有的测评结论和我自己的经验不一样？</summary>
+          <p>测评影片会公开测试条件，包括食材品牌、锅具、火力与样本数量。条件不同结论可能不同，我们鼓励你在相同条件下复现。如果复现结果有差异，欢迎在评论区贴出过程，好的反馈会被整理进下一期。</p>
+        </details>
+        <details class="hpf-faq">
+          <summary>专题企划的更新节奏是怎样的？</summary>
+          <p>「深夜一人食」为双周更，「番茄研究所」为月更，「黑椒实验室」已完结并保留归档。更新日历会在每月 1 日发布在动态区，如遇调整会提前三天公告。</p>
+        </details>
+        <details class="hpf-faq">
+          <summary>社区投票的结果会真的影响内容方向吗？</summary>
+          <p>会。每季度末的专题方向投票中，得票前两位的选题会进入下一季度的制作计划。本季的"深夜一人食"就来自 4200 余名用户的投票结果，制作名单也在公告中公开。</p>
+        </details>
+        <details class="hpf-faq">
+          <summary>如何申请成为官方认证创作者？</summary>
+          <p>在平台累计发布 5 条以上原创作品、无版权争议、且至少一条作品进入过周榜，即可在个人主页提交认证申请。审核重点关注画面清晰度、信息准确性与原创程度，通过后可获得专题推荐位与拍摄规范支持。</p>
+        </details>
+        <details class="hpf-faq">
+          <summary>收藏和点赞的数据会公开吗？</summary>
+          <p>播放、点赞与收藏数在作品页公开展示，用于帮助观众判断内容热度。个人主页仅展示汇总数据，不展示具体观看记录。你可以随时在设置中关闭收藏列表的对外可见。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 投稿 -->
+  <section class="hpf-section" id="hpf-submit" style="padding-top:0">
+    <div class="hpf-wrap">
+      <div class="hpf-submit-band">
+        <div>
+          <h2>把你的一碗饭，放进黑椒盖饭流泪番茄的社区</h2>
+          <p>无论是一段三分钟的深夜记录，还是一次认真的黑椒汁对照实验，我们都愿意给它一个被看见的位置。上传作品，参与冬季专题，或只是投一票决定下期拍什么。</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <button class="hpf-btn hpf-btn-primary" type="button" id="hpf-open-submit">上传作品</button>
+          <button class="hpf-btn hpf-btn-ghost" type="button" id="hpf-open-report">意见反馈</button>
+        </div>
+      </div>
+      <p class="hpf-sub-note">官方网站持续运营中 · 投稿作品需为<strong>原创正版</strong> · 审核周期约 5 个工作日 · 精品内容将进入专题推荐</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="hpf-footer">
+  <div class="hpf-wrap">
+    <div class="hpf-footer-grid">
+      <div>
+        <div class="hpf-footer-brand">
+          <svg width="36" height="36" viewBox="0 0 64 64" aria-label="页脚品牌标识">
+            <circle cx="32" cy="35" r="23" fill="#c0392b"/>
+            <path d="M32 13c2-6 8-9 13-7-2 6-8 9-13 7z" fill="#2e7d32"/>
+            <circle cx="24" cy="31" r="3" fill="#fff"/>
+            <circle cx="40" cy="31" r="3" fill="#fff"/>
+            <path d="M26 43c3 3 9 3 12 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+          <strong>黑椒盖饭流泪番茄</strong>
+        </div>
+        <p class="hpf-footer-desc">一人食原创影像品牌官方网站。以专业拍摄记录家常料理的细节，以持续运营构建值得信赖的美食内容社区，让每一碗热饭都有被认真对待的机会。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#hpf-focus">焦点视频</a></li>
+          <li><a href="#hpf-parse">品牌解析</a></li>
+          <li><a href="#hpf-special">专题企划</a></li>
+          <li><a href="#hpf-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区参与</h4>
+        <ul>
+          <li><a href="#hpf-voices">口碑评价</a></li>
+          <li><a href="#hpf-news">企业动态</a></li>
+          <li><a href="#hpf-faq">帮助中心</a></li>
+          <li><a href="#hpf-submit">投稿入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#hpf-parse">品牌故事</a></li>
+          <li><a href="#hpf-news">合作伙伴</a></li>
+          <li><a href="#hpf-faq">版权说明</a></li>
+          <li><a href="#hpf-submit">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hpf-footer-bottom">
+      <span>黑椒盖饭流泪番茄官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：仅供演示 · 内容为原创虚构示例</span>
+    </div>
+  </div>
+</footer>
+
+<button class="hpf-top" id="hpf-top-btn" type="button" aria-label="回到顶部">↑</button>
+
+<div class="hpf-modal" id="hpf-modal" role="dialog" aria-modal="true" aria-labelledby="hpf-modal-title">
+  <div class="hpf-modal-box">
+    <button class="hpf-modal-close" type="button" id="hpf-modal-close" aria-label="关闭">×</button>
+    <div id="hpf-modal-content"></div>
+  </div>
+</div>
+
+<div class="hpf-toast" id="hpf-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  'use strict';
+  var stickyZone = document.querySelector('.hpf-sticky-zone');
+  var nav = document.getElementById('hpf-nav');
+  var burger = document.getElementById('hpf-burger');
+  var searchWrap = document.getElementById('hpf-search');
+  var searchInput = document.getElementById('hpf-search-input');
+  var searchBtn = document.getElementById('hpf-search-btn');
+  var feedback = document.getElementById('hpf-search-feedback');
+  var toast = document.getElementById('hpf-toast');
+  var modal = document.getElementById('hpf-modal');
+  var modalContent = document.getElementById('hpf-modal-content');
+  var modalClose = document.getElementById('hpf-modal-close');
+  var topBtn = document.getElementById('hpf-top-btn');
+  var toastTimer = null;
+
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('hpf-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('hpf-show'); }, 2200);
+  }
+
+  function syncStickyOffset(){
+    if(stickyZone){
+      var h = stickyZone.offsetHeight;
+      document.documentElement.style.setProperty('--hpf-sticky', h + 'px');
+      document.documentElement.style.setProperty('scroll-padding-top', (h + 14) + 'px');
+    }
+  }
+  syncStickyOffset();
+  window.addEventListener('resize', syncStickyOffset);
+
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('hpf-nav-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('hpf-nav-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  var searchData = [
+    {keys:['黑椒','盖饭','黑椒汁'],tip:'黑椒汁挂勺测试·第3版 —— 老周的小灶台，12:36'},
+    {keys:['番茄','流泪'],tip:'流泪番茄的第一口：酸甜分两次下锅 —— 小满炊事馆'},
+    {keys:['教程','做法'],tip:'减辛版黑椒盖饭配方 —— 给爸妈的那一碗'},
+    {keys:['测评','对比'],tip:'黑胡椒现磨 vs 预磨：盲测十碗盖饭后的结论'},
+    {keys:['作者','创作者'],tip:'创作者矩阵共 6 位，含老周、阿烛、镜田纪实等'},
+    {keys:['投稿','上传'],tip:'冬季一人食投稿通道开放中，点击页面底部"上传作品"'}
+  ];
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      feedback.textContent = '输入"黑椒""番茄""教程"等关键词试试看。';
+      feedback.classList.add('hpf-show');
+      return;
+    }
+    var hit = searchData.find(function(item){
+      return item.keys.some(function(k){ return q.indexOf(k) > -1 || k.indexOf(q) > -1; });
+    });
+    if(hit){
+      feedback.textContent = '找到相关结果：' + hit.tip;
+    }else{
+      feedback.textContent = '暂未找到"' + q + '"的直接结果，试试"黑椒"或"番茄"。';
+    }
+    feedback.classList.add('hpf-show');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+  document.addEventListener('click', function(e){
+    if(!feedback.contains(e.target) && e.target !== searchInput && !searchBtn.contains(e.target)){
+      feedback.classList.remove('hpf-show');
+    }
+  });
+
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var countEl = btn.querySelector('[data-like-count]');
+      var active = btn.classList.toggle('hpf-on');
+      if(countEl){
+        var n = parseInt(countEl.textContent.replace(/,/g,''), 10) || 0;
+        n = active ? n + 1 : Math.max(0, n - 1);
+        countEl.textContent = n.toLocaleString('en-US');
+      }
+      showToast(active ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+
+  document.querySelectorAll('[data-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('hpf-saved');
+      btn.textContent = saved ? '♥ 已收藏' : '♡ 收藏';
+      showToast(saved ? '已加入收藏夹' : '已从收藏夹移除');
+    });
+  });
+
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var done = function(){ showToast('链接已复制，可分享给朋友'); };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText('黑椒盖饭流泪番茄 · 黑椒汁挂勺测试：三分钟决定一碗盖饭的成败')
+          .then(done).catch(function(){ showToast('已打开分享提示'); });
+      }else{
+        showToast('已打开分享提示');
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      openModal('<h3 id="hpf-modal-title">创作者档案 · ' + name + '</h3>' +
+        '<p>该创作者长期参与黑椒盖饭流泪番茄官方专题创作，作品以具体、可复刻、可讨论为标准。</p>' +
+        '<p>擅长方向包含教程拆解、实测对照与生活记录，作品全部为原创正版高清内容。官方为其提供拍摄规范与专题推荐位支持。</p>' +
+        '<p>想合作或约稿？可在页面底部提交反馈，注明"作者合作"即可。</p>' +
+        '<button class="hpf-btn hpf-btn-primary" type="button" data-close style="margin-top:10px">知道了</button>');
+    });
+  });
+
+  function openModal(html){
+    modalContent.innerHTML = html;
+    modal.classList.add('hpf-show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('hpf-show');
+    document.body.style.overflow = '';
+  }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){
+    if(e.target === modal || e.target.hasAttribute('data-close')) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('hpf-show')) closeModal();
+  });
+
+  document.getElementById('hpf-open-submit').addEventListener('click', function(){
+    openModal('<h3 id="hpf-modal-title">上传作品 · 冬季一人食专题</h3>' +
+      '<p>请留下作品标题与联系方式，官方编辑会在 5 个工作日内完成初审并回复修改建议。</p>' +
+      '<input type="text" id="hpf-sub-title" placeholder="作品标题，例如：出租屋里的黑椒盖饭" aria-label="作品标题">' +
+      '<textarea id="hpf-sub-desc" placeholder="简单描述你的作品与拍摄设备" aria-label="作品描述"></textarea>' +
+      '<button class="hpf-btn hpf-btn-primary" type="button" id="hpf-sub-send" style="margin-top:14px">提交投稿</button>');
+    var send = document.getElementById('hpf-sub-send');
+    send.addEventListener('click', function(){
+      var title = (document.getElementById('hpf-sub-title').value || '').trim();
+      if(!title){ showToast('请先填写作品标题'); return; }
+      closeModal();
+      showToast('投稿已提交，等待官方审核');
+    });
+  });
+
+  document.getElementById('hpf-open-report').addEventListener('click', function(){
+    openModal('<h3 id="hpf-modal-title">意见反馈</h3>' +
+      '<p>无论你是想指出某条测评的疏漏，还是希望某个城市多拍几集，我们都想听。</p>' +
+      '<textarea id="hpf-fb-desc" placeholder="写下你的建议或问题" aria-label="反馈内容"></textarea>' +
+      '<button class="hpf-btn hpf-btn-primary" type="button" id="hpf-fb-send" style="margin-top:14px">发送反馈</button>');
+    document.getElementById('hpf-fb-send').addEventListener('click', function(){
+      var v = (document.getElementById('hpf-fb-desc').value || '').trim();
+      if(!v){ showToast('请先填写反馈内容'); return; }
+      closeModal();
+      showToast('反馈已收到，感谢你的认真');
+    });
+  });
+
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 600){ topBtn.classList.add('hpf-top-show'); }
+    else{ topBtn.classList.remove('hpf-top-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+          </html>
